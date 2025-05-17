@@ -1,0 +1,168 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.layout {
+  display: flex;
+  
+}
+
+
+aside {
+  width: 200px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+  
+}
+
+aside h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+
+.table-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table-container thead {
+  background-color: #3498db;
+  color: white;
+}
+
+.table-container tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+input[type="submit"],
+button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #2980b9;
+}
+
+/* ----POPUP------ */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  z-index: 10000;
+  text-align: center;
+}
+
+.popup h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.popup p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.popup input[type="submit"],
+.popup button {
+  margin: 10px 5px 0;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.popup input[type="submit"] {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.popup input[type="submit"]:hover {
+  background-color: #c0392b;
+}
+
+.popup button {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+.popup button:hover {
+  background-color: #95a5a6;
+}
